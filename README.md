@@ -2,8 +2,6 @@
 
 A small Redis-compatible in-memory key-value store written in **C++**, with **TTL** and **AOF** persistence, plus a tiny **Node/Express** metrics dashboard.
 
-> Not production software. It’s a learning / demo project that’s great for benchmarks and interviews.
-
 ---
 
 ## Features
