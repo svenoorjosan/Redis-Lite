@@ -27,5 +27,15 @@ make
 
 # run the server (defaults: PORT=6380, AOF_PATH=./data.aof)
 PORT=6381 AOF_PATH=data-prod.aof ./redis-lite
+---
 
-```asdas
+## Features
+
+- **RESP** protocol over TCP (works with `redis-cli` for the supported commands)
+- Commands: `PING`, `ECHO`, `SET`, `GET`, `DEL`, `EXISTS`, `EXPIRE`, `TTL`, `INFO`
+- **TTL**: lazy expiration on reads + active sweeper using a min-heap
+- **AOF** persistence: buffered appends, ~100 ms flush, ~1 s fsync; replay on startup
+- **Metrics dashboard** at `http://localhost:8080` (uptime, clients, keys, command count, expired keys, AOF size)
+- **Graceful shutdown**: final AOF flush on SIGINT/SIGTERM
+
+---
