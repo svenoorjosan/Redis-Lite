@@ -27,3 +27,5 @@ make
 
 # run the server (defaults: PORT=6380, AOF_PATH=./data.aof)
 PORT=6381 AOF_PATH=data-prod.aof ./redis-lite
+
+```asdas
